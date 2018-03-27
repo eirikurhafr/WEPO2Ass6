@@ -2,7 +2,29 @@
 
 /* Add styles for section-1 */
 
+.section-1{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+    grid-template-rows: 200px;
+}
+
+.flex-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Add styles for section-2 */
+
+.section-2{
+    box-sizing: border-box;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 
+        [h] 50% [b] 100% [b] 100% [b] 100% [t] 50%;
+    /*min max content*/
+}
 
 /* Add styles for section-3 */
 
