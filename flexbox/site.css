@@ -9,7 +9,7 @@
     grid-template-rows: 200px;
 }
 
-.flex-item{
+.section-1 > .flex-item{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,10 +20,22 @@
 .section-2{
     box-sizing: border-box;
     display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr min-content min-content min-content 1fr;
     grid-auto-flow: row;
-    grid-auto-rows: 
-        [h] 50% [b] 100% [b] 100% [b] 100% [t] 50%;
     /*min max content*/
+}
+
+.section-2 > .flex-item {
+    grid-column: 1 / span 2;
+}
+
+.section-2 > .flex-item:first-child {
+    grid-column: 1 / span 1;
+}
+
+.section-2 > .flex-item:last-child {
+    grid-column: 2 / -1;
 }
 
 /* Add styles for section-3 */
