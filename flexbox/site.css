@@ -118,8 +118,16 @@
     flex-flow: column wrap-reverse;
     align-content: stretch;
     flex-direction: column-reverse;
+    order: integer-reverse;
 }
 
+.section-5 > .flex-item:nth-child(5) {
+    order: 10;
+}
+
+.section-5 > .flex-item:last-child { 
+    order: 5;
+}
 
 /* Add styles for section-6 */
 
@@ -135,11 +143,16 @@
 /* Add styles for section-7 */
 
 .section-7 {
+    box-sizing: border-box;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     flex-flow: column wrap-reverse;
-    align-content: stretch;
-    flex-direction: column-reverse;
+    align-content: flex-end flex-start;
+    flex-direction: column;
 }
 /* Add styles for section-8 */
+
+.section-8 {
+    
+}
