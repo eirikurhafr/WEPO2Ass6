@@ -45,41 +45,23 @@
 
 /* Add styles for section-3 */
 
-.section-3{
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: [col1] auto [col2] auto [col3] auto [col4] auto;
-    grid-template-rows: [row1] auto [row2] auto [row2e];
-    grid-auto-flow: row;
-    
-}
+.section-3 {  
+    display: flex;  
+    flex-direction: column;  
+    flex-wrap: wrap;  
+ }  
+  
+ .section-3 > .flex-item {  
+   flex-basis: 50% 
+ }
+  
+ .section-3 > .flex-item:first-child {  
+    flex-basis: 100% 
+ }
 
-.section-3 > .flex-item:first-child {
-    grid-column: col1 / col2;
-    grid-row: row1 / row2e;
-}
-
-.section-3 > .flex-item:last-child {
-    grid-column: col4 ;
-    grid-row: row1 / row2e;
-}
-
-.section-3 > .flex-item:nth-child(2) { 
-    grid-column: col2 ;
-    grid-row: row1;
-}
-.section-3 > .flex-item:nth-child(3) { 
-    grid-column: col2 ;
-    grid-row: row2;
-}
-.section-3 > .flex-item:nth-child(4) { 
-    grid-column: col3 ;
-    grid-row: row1;
-}
-.section-3 > .flex-item:nth-child(5) { 
-    grid-column: col3 ;
-    grid-row: row2;
-}
+ .section-3 > .flex-item:last-child {  
+    flex-basis: 100% 
+ }
 
 /* Add styles for section-4 */
 
