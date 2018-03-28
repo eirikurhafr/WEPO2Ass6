@@ -101,12 +101,15 @@
 
 .section-4{
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(6, 100px);
-    grid-template-rows: 60px;
-    grid-auto-flow: row;
-    grid-column-gap: minmax(1%, 100%);
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-4 > .flex-item {
+    height: 60px;
+    width: 100px;
 }
 
 
