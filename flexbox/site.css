@@ -4,10 +4,32 @@
 
 .section-1{
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
-    grid-template-rows: 200px;
+    display: flex;
+    height: 200px;
 }
+
+
+.section-1 > .flex-item:first-child {
+    flex-grow: 2;
+}
+
+.section-1 > .flex-item:nth-child(2) { 
+    flex-grow: 1;
+
+}
+.section-1 > .flex-item:nth-child(3) { 
+    flex-grow: 2;
+
+}
+.section-1 > .flex-item:nth-child(4) { 
+    flex-grow: 1;
+
+}
+.section-1 > .flex-item:nth-child(5) { 
+    flex-grow: 2;
+
+}
+
 
 .section-1 > .flex-item{
     display: flex;
@@ -37,9 +59,58 @@
 
 /* Add styles for section-3 */
 
+.section-3{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: [col1] auto [col2] auto [col3] auto [col4] auto;
+    grid-template-rows: [row1] auto [row2] auto [row2e];
+    grid-auto-flow: row;
+    
+}
+
+.section-3 > .flex-item:first-child {
+    grid-column: col1 / col2;
+    grid-row: row1 / row2e;
+}
+
+.section-3 > .flex-item:last-child {
+    grid-column: col4 ;
+    grid-row: row1 / row2e;
+}
+
+.section-3 > .flex-item:nth-child(2) { 
+    grid-column: col2 ;
+    grid-row: row1;
+}
+.section-3 > .flex-item:nth-child(3) { 
+    grid-column: col2 ;
+    grid-row: row2;
+}
+.section-3 > .flex-item:nth-child(4) { 
+    grid-column: col3 ;
+    grid-row: row1;
+}
+.section-3 > .flex-item:nth-child(5) { 
+    grid-column: col3 ;
+    grid-row: row2;
+}
+
+
+
 /* Add styles for section-4 */
 
-/* Add styles for section-5 */
+.section-4{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: 60px;
+    grid-auto-flow: row;
+    grid-column-gap: minmax(1%, 100%);
+    justify-content: center;
+}
+
+
+/* Add styles for section-5 */t
 
 /* Add styles for section-6 */
 
