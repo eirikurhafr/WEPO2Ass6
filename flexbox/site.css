@@ -117,9 +117,38 @@
     align-items: center;
     justify-content: center;
     flex-flow: column wrap-reverse;
-    align-content: flex-end flex-start;
     flex-direction: column;
 }
+
+.section-7 > .carebear-blue {
+    align-self: flex-start;
+    order: 3;
+    flex-grow: 2;
+}
+
+.section-7 > .carebear-green {
+    align-self: flex-start;
+    order: 2;
+    flex-grow: 2;
+}
+
+.section-7 > .carebear-red {
+    align-self: flex-start;
+    order: 1;
+    flex-grow: 2;
+}
+
+.section-7 > .carebear-pink {
+    align-self: flex-end;
+    order: 5;
+}
+
+.section-7 > .carebear-yellow {
+    align-self: flex-start;
+    order: 4;
+    flex-grow: 2;
+}
+
 /* Add styles for section-8 */
 
 .section-8 { 
